@@ -18,24 +18,27 @@ let myMap = L.map("map", {
 streets.addTo(myMap);
 
 // // Perform a GET request to query the d3.json(Airbnb)
-d3.json(AirbnbJSON).then(({property_type, latitude, longitude, price, review_scores_rating, accommadates,beds}) => {
+d3.json(AirbnbJSON).then(({property_type, latitude, longitude, price, review_scores_rating, accommodates, beds, bathrooms_text, listing_url }) => {
 // d3.json(AirbnbJSON).then(data => {
 
     
     let property_ = Object.values(property_type);
+    let accommodates_ = Object.values(accommodates);
     let beds_ = Object.values(beds);
+    let baths_ = Object.values(bathrooms_text);
     let price_ = Object.values(price);
     let lat = Object.values(latitude);
     let lon = Object.values(longitude);
-    let scores = Object.values(review_scores_rating);
+    let rating = Object.values(review_scores_rating);
+    let listing = Object.values(listing_url);
 
 
-    scores.forEach((score,i) => {
+    rating.forEach((score,i) => {
 
         console.log(parseFloat(price_[i].slice(1)));
         
         L.circleMarker([lat[i],lon[i]], {
-            radius: scores[i],
+            radius: rating[i],
             fillOpacity: .5,
             color: 'grey',
             weight: 0.5,
@@ -46,18 +49,22 @@ d3.json(AirbnbJSON).then(({property_type, latitude, longitude, price, review_sco
                 parseFloat(price_[i].slice(1)) > 500 ? "red" :
                 parseFloat(price_[i].slice(1)) > 250 ? "magenta" :
                 parseFloat(price_[i].slice(1)) > 0 ? "yellow" : 'orange'
-        }).bindPopup(L.popup({maxWidth:500})
-        .setContent(`<div> ${property_[i]} property </br> lat ${lat[i]} lon ${lon[i]}</div><div>price ${price_[i]}</div>`)).addTo(myMap)
+        
 
+            }).bindPopup(L.popup({ maxWidth: 500 })
+            .setContent(`<div style="font-size: 20px;"><strong>${property_[i]} property</strong></br></div>
+                        <div style="font-size: 18px;">Price per night: ${price_[i]}</div>
+                        <div style="font-size: 18px;">Accommodates: ${accommodates_[i]}</div>
+                        <div style="font-size: 18px;">Beds: ${beds_[i]} beds</div>  
+                        <div style="font-size: 18px;">Baths: ${baths_[i]}</div> 
+                        <div style="font-size: 18px;">Rating: ${rating[i]}</div>
+                        <div style="font-size: 18px;"><a href="${listing[i]}" target="_blank">More details about: ${listing[i]}</a></div>`
+                         )).addTo(myMap);
+        //});
 
     });
 
-// }).bindPopup(L.popup({maxWidth:500})
-// .setContent(`<div> ${property_[i]} property </br> lat ${lat[i]} lon ${lon[i]}</div><div>price ${price_[i]}</div>`)).addTo(myMap)
 
-
-    // Once we get a response, send the data.features object to the createFeatures function.
-    // createFeatures(data);
 });
 
 // Create a function for the marker size
@@ -70,42 +77,11 @@ function markerSize(rating) {
 
     }
 
-    // Define a function that we want to run once for each feature in the features array.
-    // Give each feature a popup that describes the Airbnb location, price and rating.
-    // function onEachFeature(feature, layer) {
-    //     layer.bindPopup(`<h3>Location: ${feature.properties.place}
-    //     </h3><hr><p>Date: ${new Date(feature.properties.time)}
-    //     </p><p>Magnitude: ${feature.properties.mag}
-    //     </p><p>Depth: ${feature.geometry.coordinates[2]}</p>`);
-    //   }
-        
-//     // Define a function that we want to run once for each feature in the features array.
-//     // Give each feature a popup with the location, price, # of beds, rating.  
-
-    
-    // Create a GeoJSON layer that contains the features array on the AirbnbData object.
-    // Run the onEachFeature function once for each piece of data in the array.
-    // var Airbnb = L.geoJSON(AirbnbData, {
-    //     onEachFeature: onEachFeature,
-    
 
     //Point to layer used to alter markers
 //     pointToLayer: function(feature, latlng) {
 
-    
-//     //Set the style of the markers based on the properties
-//     var markers = {
-//         radius: markerSize(feature.properties.coordinates),
-//           fillColor: choosecolor(feature.geometry.coordinates[2]),
-//           fillOpacity: 0.1,
-//           color: "black",
-//           stroke: true,
-//           weight: .5
-//       }
-//       return L.circle(latlng,markers);
-//     }
-//   });
-
+   
     // // Send our Airbnb layer to the createMap function/
     // createMap(Airbnb);
     
@@ -133,19 +109,42 @@ function markerSize(rating) {
       Airbnb: Airbnb
     };
   
-    // Create map, giving it the streetmap and Airbnb layers to display on load.
-    // let myMap = L.map("map", {
-    //   center: [
-    //     22.1, -159.53
-    //   ],
-    //   zoom: 5,
-    //   layers: [street, Airbnb]
-    // });
-
     streetMap.addTo(myMap);
 
 
 //Add Legend
+
+// Create a legend
+let legend = L.control({ position: 'bottomright' });
+
+legend.onAdd = function (map) {
+    let div = L.DomUtil.create('div', 'info legend');
+    let labels = [];
+
+    // Add legend title
+    div.innerHTML += '<h4>Price Legend</h4>';
+
+    // Create labels with color and range information
+    let categories = [0, 250, 500, 1000, 2500, 5000];
+    let colors = ['orange', 'yellow', 'red', 'magenta', 'purple', 'blue', 'green'];
+
+    for (let i = 0; i < categories.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + colors[i] + '"></i> ' +
+            (categories[i] ? `$${categories[i - 1] + 1}-${categories[i]}` : `>$${categories[i]}`);
+        labels.push(
+            `<i style="background:${colors[i]}"></i> ${
+                categories[i] ? `$${categories[i - 1] + 1}-${categories[i]}` : `>$${categories[i]}`
+            }`
+        );
+    }
+    div.innerHTML = labels.join('<br>');
+
+    return div;
+};
+
+// Add the legend to the map
+legend.addTo(myMap);
 
 
 

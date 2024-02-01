@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kauaʻi Paradise</title>
+  <style>
+    body {
+      background-image: url('hawaii_2.jpeg');
+      background-size: cover;
+      background-blend-mode: lighten;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      padding: 100px;
+      color: #ffffff;
+    }
+
+    h1 {
+      font-size: 6em;
+      margin-bottom: 120px;
+      color: #ffffff;
+      text-shadow: 4px 3px #000000;
+    }
+    
+    h2 {
+      font-size: 2.8em;
+      margin-bottom: 60px;
+      color: #ffffff;
+      text-shadow: 3px 2px #000000;
+    }
+    h3 {
+      font-size: 2.2em;
+      margin-bottom: 30px;
+      color: #ffffff;
+      text-shadow: 3px 2px #000000;
+    }
+
+    button {
+      padding: 30px 50px;
+      font-size: 2em;
+      background-color: #4B8FFA;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #01F9C6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- <audio src="music_h.mp3" controls>
+      <p>If you are reading this, it is because your browser does not support the audio element.</p>
+      </audio> -->
+    <h1>Welcome to Kauaʻi Paradise!</h1>
+    <h2>Kauaʻi is Hawaii's fourth largest island and is sometimes called the "Garden Island," which is an entirely accurate description. The oldest and northernmost island in the Hawaiian chain is draped in emerald valleys, sharp mountain spires and jagged cliffs aged by time and the elements.</h2>
+    <h3>Explore Kauaʻi Airbnb interactive map</h3>
+    <button onclick="redirectToAnotherPage1()">Explore Airbnb</button>
+    <h3>Feeling adventurous? Click here to explore things to do!</h3>
+    <button onclick="redirectToAnotherPage2()">Explore Kauaʻi</button>
+  </div>
+
+  <script>
+    function redirectToAnotherPage1() {
+      window.open('index.html', '_blank');
+    }
+  </script>
+    <script>
+        function redirectToAnotherPage2() {
+          window.open ('https://www.tripadvisor.com/Attractions-g29218-Activities-Kauai_Hawaii.html', '_blank');
+        }
+      </script>
+</body>
+</html>

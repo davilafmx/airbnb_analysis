@@ -1,5 +1,4 @@
 # Airbnb Analysis: Hawaii's Koloa-Poipu Insights
-## 1. Introduction
 
 ### Team Members:
 *  Jose Davila

@@ -7,7 +7,7 @@
 *  Rae Ann Gregg
 * Emilia Sanchez
 
-### Project Overview
+### Introduction to Project
 
 The Airbnb Analysis project focuses on analyzing Airbnb data from the travel industry and property management domain. By leveraging SQL PG admin and various data analysis and visualization tools, we aim to extract valuable insights into pricing dynamics, availability patterns, and location-based trends in Airbnb listings.
 Tourism Impact Assessment in Hawaii - Koloa-Poipu

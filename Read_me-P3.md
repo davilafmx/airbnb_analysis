@@ -1,4 +1,4 @@
-# Analyzing Airbnb Data: Insights into Pricing, Availability, and Location Trends in Hawaii - Koloa-Poipu Region
+# Airbnb Analysis: Hawaii's Koloa-Poipu Insights
 ## 1. Introduction
 
 ### Project Overview

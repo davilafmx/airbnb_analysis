@@ -2,11 +2,11 @@
 ## 1. Introduction
 
 ### Project Team Members:
-Jose Davila
-Diana De Los Santos
-Marc Huerta
-Rae Ann Gregg
-Emilia Sanchez
+*  Jose Davila
+*  Diana De Los Santos
+*  Marc Huerta
+*  Rae Ann Gregg
+* Emilia Sanchez
 
 ### Project Overview
 

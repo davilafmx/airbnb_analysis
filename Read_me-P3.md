@@ -1,5 +1,4 @@
-
-Read me outline
+# Project 3 - Analyzing Airbnb Data: Insights into Pricing, Availability, and Location Trends in Hawaii - Koloa-Poipu Region
 ## 1. Introduction
 
 ### Project Overview

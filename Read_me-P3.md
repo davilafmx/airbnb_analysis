@@ -25,14 +25,13 @@ Identify peak tourist seasons and potential factors influencing these patterns.
 
 The primary objectives of this project include:
 
-1. Establishing a connection to SQL PG admin and retrieving Airbnb dataset efficiently.
+1. Establishing a connection to SQL PG admin and retrieving the Airbnb dataset efficiently.
 2. Cleaning and preparing the dataset to ensure data integrity and consistency.
 3. Developed with Python geo.json API visualizations.
-4. Analyzing and visualizing pricing variations based on location, property type, in Kauai.
+4. Analyzing and visualizing pricing variations based on location, and property type, in Kauai.
 5. Examining availability patterns and demand fluctuations across seasons.
 6. Investigating location-based insights for Kauai.
 7. Creating interactive visualizations for user exploration.
-8. * Building a comprehensive dashboard using _____for presenting key insights.
 
 ### Data Source
 
@@ -46,7 +45,7 @@ We established a connection to SQL and retrieved the Airbnb dataset. Data retrie
 
 ### Data Cleaning and Preparation
 
-The dataset underwent a comprehensive data cleaning and preparation process. This involved handling missing values, removing duplicates, and converting data types for accurate analysis. The dataset was made ready for exploratory data analysis and visualization tasks using the following libraries: pandas, html, matplotlib, Pyplot, seaborn and numPy.
+The dataset underwent a comprehensive data cleaning and preparation process. This involved handling missing values, removing duplicates, and converting data types for accurate analysis. The dataset was made ready for exploratory data analysis and visualization tasks using the following libraries: pandas, html, matplotlib, Pyplot, seaborn, and numPy.
  
 
 ### Geospatial Visualization using Topographic map
@@ -67,7 +66,7 @@ We investigated how the price of listings varies across Kaui. Utilizing SQL quer
 
 ### Interactive Visualizations
 
-* Dynamic and interactive visualizations were developed to allow users to filter and find the data based on their preferences. Users could interact with the visualizations to explore specific regions, property types, or time periods of interest.
+Dynamic and interactive visualizations enable users to interact with specific regions, property types, or areas of interest.
 
 ### Dashboard Creation using Tableau or Power BI
 
@@ -95,7 +94,7 @@ In conclusion, the Airbnb Analysis project successfully provided valuable insigh
 
 ### Key Takeaways
 
-The project facilitated learning outcomes in SQL-PG Admin, *Streamlit*, Python data analysis, geospatial analysis, and data visualization techniques. It enhanced problem-solving and data-driven decision-making skills.
+The project facilitated learning outcomes in SQL-PG Admin, Seaborn, Python data analysis, geospatial analysis, and data visualization techniques. It enhanced problem-solving and data-driven decision-making skills.
 
 Ethical data considerations made by using all public data resources within Air BNB and travel websites
 

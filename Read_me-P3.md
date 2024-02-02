@@ -101,9 +101,9 @@ The project facilitated learning outcomes in SQL-PG Admin, Seaborn, Python data 
 
 Ethical data considerations made by using all public data resources within Air BNB and travel websites
 
-Data source references:
-http://insideairbnb.com/get-the-data
-image for HTML landing page:
-https://koloalandingresort.com/kauai-travel-guide/
-Hawaii Tourism Authority - https://data.uhero.hawaii.edu/dvw/#/module/trend
+### Data source references:
+* http://insideairbnb.com/get-the-data
+* image for HTML landing page:
+* https://koloalandingresort.com/kauai-travel-guide/
+* Hawaii Tourism Authority - https://data.uhero.hawaii.edu/dvw/#/module/trend
 

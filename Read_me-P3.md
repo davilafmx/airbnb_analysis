@@ -1,7 +1,7 @@
 # Airbnb Analysis: Hawaii's Koloa-Poipu Insights
 ## 1. Introduction
 
-### Project Team Members:
+### Team Members:
 *  Jose Davila
 *  Diana De Los Santos
 *  Marc Huerta

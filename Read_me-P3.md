@@ -7,19 +7,19 @@
 *  Rae Ann Gregg
 * Emilia Sanchez
 
-### Introduction to Project
+#### Introduction to Project
 
 The Airbnb Analysis project focuses on analyzing Airbnb data from the travel industry and property management domain. By leveraging SQL PG admin and various data analysis and visualization tools, we aim to extract valuable insights into pricing dynamics, availability patterns, and location-based trends in Airbnb listings.
 Tourism Impact Assessment in Hawaii - Koloa-Poipu
 
-###  Objective:
+####  Objective:
 The primary goal of this data analysis project is to assess the impact of tourism on the Hawaii - Koloa-Poipu region. We selected this location because it is the highest rated area within Hawaii. By analyzing various data sources, we aim to understand the patterns, trends, and economic implications of tourism in the area.
 
-### Key Components: 
+#### Key Components: 
 Gather data on the demographics of tourists visiting Hawaii - Koloa-Poipu.
 Analyze seasonal fluctuations, average price, and rating 
 
-### Seasonal Trends:
+#### Seasonal Trends:
 Explore seasonal variations in bookings and prices
 Identify peak tourist seasons and potential factors influencing these patterns.
 

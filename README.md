@@ -105,3 +105,4 @@ Ethical data considerations made by using all public data resources within Air B
 * http://insideairbnb.com/get-the-data
 * https://koloalandingresort.com/kauai-travel-guide/ (image for HTML landing page:) 
 * Hawaii Tourism Authority - https://data.uhero.hawaii.edu/dvw/#/module/trend
+* https://davilafmx.github.io/airbnb_analysis/

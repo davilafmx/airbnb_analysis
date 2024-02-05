@@ -93,13 +93,14 @@ Location-based insights highlighted price disparities in specific regions or nei
 ### Summary of Insights
 
 In conclusion, the Airbnb Analysis project successfully provided valuable insights into pricing variations, availability patterns, and location-based trends within the Airbnb dataset. 
-* Key findings included...
 
 ### Key Takeaways
 
-The project facilitated learning outcomes in SQL-PG Admin, Seaborn, Python data analysis, geospatial analysis, and data visualization techniques. It enhanced problem-solving and data-driven decision-making skills.
-
-Ethical data considerations made by using all public data resources within Air BNB and travel websites
+Kauai is a popular place to visit year round with June through August being the most popular months.
+Super Hosts have a slightly higher average rating and have significantly more reviews than other hosts and are the slightly more affordable option on average.
+The most expensive options have a lower rating than the more affordable options on average.
+This project facilitated learning outcomes in SQL-PG Admin, Seaborn, Python data analysis, geospatial analysis, and data visualization techniques. It enhanced our problem-solving and data-driven decision-making skills.
+Ethical data considerations were made by using all public data resources within Air BNB and travel websites
 
 ### Link to Airbnb Website
 

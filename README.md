@@ -43,6 +43,9 @@ The project utilizes SQL, PG admin, SQLite, as the data source, containing sampl
 * http://insideairbnb.com/get-the-data
 * https://koloalandingresort.com/kauai-travel-guide/ (image for HTML landing page:) 
 * Hawaii Tourism Authority - https://data.uhero.hawaii.edu/dvw/#/module/trend
+* https://medium.com/@mathyou/exploratory-data-analysis-of-hawaii-airbnb-python-project-f213bdd947dc
+* https://data.uhero.hawaii.edu/dvw/#/module/trend
+* https://www.budgetyourtrip.com/united-states-of-america/kauai
 
 ## 2. Methodology
 

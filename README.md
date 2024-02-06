@@ -78,6 +78,9 @@ Dynamic and interactive visualizations enable users to interact with specific re
 
 * A comprehensive dashboard was built using Tableau, combining various visualizations to present key insights from the analysis. This dashboard provided a holistic view of the Airbnb dataset and its patterns.
 
+* https://public.tableau.com/views/SuperHost_1/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link ​
+* https://www.airbnb.com/d/superhost-guest#:~:text=Being%20an%20Airbnb%20Superhost%20is,and%20often%20exceeding%2C%20guest%20expectations 
+
 ## 3. Data Analysis and Findings
 
 ### Pricing Trends
@@ -96,15 +99,21 @@ In conclusion, the Airbnb Analysis project successfully provided valuable insigh
 
 ### Key Takeaways
 
-Kauai is a popular place to visit year round with June through August being the most popular months.
-Super Hosts have a slightly higher average rating and have significantly more reviews than other hosts and are the slightly more affordable option on average.
-The most expensive options have a lower rating than the more affordable options on average.
-This project facilitated learning outcomes in SQL-PG Admin, Seaborn, Python data analysis, geospatial analysis, and data visualization techniques. It enhanced our problem-solving and data-driven decision-making skills.
-Ethical data considerations were made by using all public data resources within Air BNB and travel websites
+* Kauai is a popular place to visit year round with June through August being the most popular months.
+* Super Hosts have a slightly higher average rating and have significantly more reviews than other hosts and are the slightly more affordable option on average.
+* The most expensive options have a lower rating than the more affordable options on average.
+* This project facilitated learning outcomes in SQL-PG Admin, Seaborn, Python data analysis, geospatial analysis, and data visualization techniques. It enhanced our problem-solving and data-driven decision-making skills.
+* Ethical data considerations were made by using all public data resources within Air BNB and travel websites.
 
 ### Link to Airbnb Website
 
 * https://davilafmx.github.io/airbnb_analysis/
+
+### Resources
+We received help from the following
+* Instructor - Rufel Estrada 
+* TA - Manuel Eduardo Sotelo Cervantes
+* Tutors - Simon Rennocks and Geronimo Perez 
 
 
 
